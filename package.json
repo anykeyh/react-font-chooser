@@ -1,0 +1,20 @@
+{
+  "name": "react-font-chooser",
+  "description": "A font selector build with and for ReactJS",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:anykeyh/react-font-chooser.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/anykeyh/react-font-chooser/blob/master/LICENSE-MIT"
+    }
+  ],
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-coffee-react": "^2.4.1",
+    "grunt-contrib-sass": "^0.9.2"
+  }
+}
