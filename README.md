@@ -6,11 +6,9 @@
 ## Getting started
 This plugin require ReactJS `>=0.13`
 
-```shell
-npm install react-font-chooser --save-dev
-```
+Just use the files into `/output` directory. Or even the files inside `/src` and `/styles` if you want to compile them.
 
-Or just use the files into `/output` directory. Or even the files inside `/src` and `/styles` if you want to compile them.
+I'm lazy to generate package for npm and upload the repositorie :P.
 
 ## Params
 
