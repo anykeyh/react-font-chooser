@@ -1,67 +1,85 @@
 .react-font-chooser {
+  position: relative;
   display: inline-block;
   text-align: left;
   width: auto;
-  height: 24px;
+  height: 1.5em;
   white-space: nowrap;
   margin: 0;
   color: #039;
-  border: solid 1px #99bbff;
+  border: solid 1px #b3ccff;
   border-radius: 4px;
   cursor: pointer; }
   .react-font-chooser:focus {
     outline: none; }
   .react-font-chooser span.react-font-selected {
     display: block;
-    height: 24px;
-    line-height: 24px;
+    height: 100%;
+    line-height: 1.5em;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 100%;
     padding: 0.0em 0.5em;
-    background-color: #f3f3f3;
+    background: #feffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #feffff 0%, #ffffff 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #feffff), color-stop(100%, #ffffff));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #feffff 0%, #ffffff 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #feffff 0%, #ffffff 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #feffff 0%, #ffffff 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #feffff 0%, #ffffff 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$from, endColorstr=$to,GradientType=0 );
+    /* IE6-9 */
     color: #039; }
   .react-font-chooser ul.react-font-chooser-options {
+    z-index: 10001;
+    border: none;
     overflow: hidden;
-    background-color: #f3f3f3;
+    background-color: #feffff;
     max-height: 0px;
-    -webkit-transition: max-height 0.3s ease-in-out;
-    -ms-transition: max-height 0.3s ease-in-out;
-    -moz-transition: max-height 0.3s ease-in-out;
-    -o-transition: max-height 0.3s ease-in-out;
-    transition: max-height 0.3s ease-in-out;
     margin: 0;
     margin-right: 1.25em;
     margin-left: -1px;
     padding: 0;
-    list-style: none;
-    border-left: solid 1px #99bbff;
-    border-right: solid 1px #99bbff;
-    border-bottom: solid 1px #99bbff;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; }
+    list-style: none; }
     .react-font-chooser ul.react-font-chooser-options.active {
+      position: absolute;
+      top: 100%;
+      left: 0px;
       overflow: auto;
       height: auto;
-      max-height: 2500px; }
+      max-height: 2500px;
+      border-left: solid 1px #b3ccff;
+      border-right: solid 1px #b3ccff;
+      border-bottom: solid 1px #b3ccff;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
     .react-font-chooser ul.react-font-chooser-options li.react-font-block {
       height: 24px;
       line-height: 24px;
       overflow: hidden;
-      font-size: 14px;
+      font-size: 100%;
       padding: 0.0em 0.5em;
       list-style: none; }
       .react-font-chooser ul.react-font-chooser-options li.react-font-block:hover {
-        color: #f3f3f3;
-        background-color: #99bbff; }
+        color: #feffff;
+        background-color: #b3ccff; }
   .react-font-chooser .react-font-chooser-button {
     padding: 0.25em 0.33em;
-    background-color: #f3f3f3;
-    color: #99bbff;
+    background-color: #feffff;
+    color: #b3ccff;
     display: block;
     float: right;
-    height: 1em; }
+    height: 100%;
+    font-size: 100%;
+    box-sizing: border-box; }
     .react-font-chooser .react-font-chooser-button:hover {
-      color: #f3f3f3;
-      background-color: #99bbff; }
+      color: #feffff;
+      background-color: #b3ccff; }
 
 /*# sourceMappingURL=react-font-chooser.css.map */
